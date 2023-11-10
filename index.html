@@ -4,11 +4,21 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UACompatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>The Factr33</title>
+	
+	<!--css links-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-	<link rel="stylesheet" type="text/css" href="style.scss">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--style links-->
+	<script type="text/javascript" src="script.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
 </head>
 <body>
@@ -35,14 +45,73 @@
 	</header>
 	<!--home section-->
 	<section class="home" id="home">
-		<div class="home-slider">
-		<div class="w">
-			<div class="slide" style=""></div>
-		</div>
+
+		<div class="swiper home-slider">
+
+		<div class="swiper-wrapper">
+
+			<div class="swiper-slide  slide" style="background: url(Wbanner.webp);">
+				<div class="content">
+					<span>New in</span>
+					<h3>women's Fashion</h3>
+					<a href="#" class="btn">shop now</a>
+				</div>
+			</div>
+
+			<div class="swiper-slide slide" style="background: url(MEnBanner.webp);">
+				<div class="content">
+					<span>New in</span>
+					<h3>men's Fashion</h3>
+					<a href="#" class="btn">shop now</a>
+				</div>
+			</div>
+
+			<div class="swiper-slide slide" style="background: url(watch-banner.jpg);">
+				<div class="content">
+					<span>30% off</span>
+					<h3>Accessories</h3>
+					<a href="#" class="btn">shop now</a>
+				</div>
+
+			</div>
 
 		</div>
+
+		<div class="btnnext"></div>
+		<div class="btnprev"></div>
+
+		</div>
+
 	</section>
 	
-	<script type="text/javascript" src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 <!-- Initialize Swiper using js -->
+	 <script>
+		var swiper = new Swiper(".home-slider", {
+		centeredSlides: true,
+		loop:true,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		  navigation: {
+			nextEl: ".btnnext",
+			prevEl: ".btnprev",
+		  },
+		});
+	  </script>
 </body>
 </html>
