@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
 
 	
 </head>
@@ -30,11 +30,40 @@
 		<div class="icons">
 			<div id="menu-btn" class="fas fa-bars"></div>
 			<div id="search-btn" class="fas fa-search"></div>
+			<div id="p"  class="fas fa-user"></div>
 			<a href="#" class="fas fa-shopping-cart"></a>
+
 		</div>
 		<form action="" class="searchfrm">
 			<input type="search" name="" placeholder="Search here..." id="searchbox">
 			<label for="searchbox" class="fas fa-search"></label>
+		</form>
+		<form action="insert.php" method="post" class="profile">
+				<p>
+				<input type="text" name="first_name" id="firstName" placeholder="first name">
+				</p>
+	
+				
+				<p>
+				<input type="text" name="last_name" id="lastName" placeholder="last name">
+				</p>
+	
+				
+				<p>
+				<input type="text" name="gender" id="Gender" placeholder="gender">
+				</p>
+	
+				
+				<p>
+				<input type="text" name="address" id="Address" placeholder="address">
+				</p>
+	
+				
+				<p>
+				<input type="text" name="email" id="emailAddress" placeholder="email">
+				</p>
+				
+				<input type="submit" value="Submit" id="submit">
 		</form>
 	</header>
 	<!--home section-->
@@ -77,6 +106,7 @@
 		</div>
 
 	</section>
+
 	<!-- specials section -->
 	<section class="specialcontainer">
 
@@ -97,9 +127,12 @@
 		</div>
 	</section>
 
+	<div style="width: 100%; height: 10rem;"></div>
+
+	<div class="line"></div>
+
 	 <!--footer-->
 	 <section class="footer">
-        <div class="line"></div>
         <div class="boxcontainer">
             <div class="icons">
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -134,7 +167,7 @@
 
 
 	<!--style links-->
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
@@ -153,6 +186,13 @@
 			prevEl: ".swiper-button-prev",
 		  },
 		});
+		let profileForm = document.querySelector('.profile');
+
+		document.querySelector('#profile').onclick = () =>{
+			profileForm.classList.toggle('active');
+			navbar.classList.remove('active');
+
+		}
 	  </script>
 </body>
 </html>

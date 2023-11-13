@@ -6,6 +6,14 @@ document.querySelector('#search-btn').onclick = () =>{
 
 }
 
+let profileForm = document.querySelector('.profile');
+
+document.querySelector('#profile').onclick = () =>{
+    profileForm.classList.toggle('active');
+    navbar.classList.remove('active');
+
+}
+
 let navbar = document.querySelector('.navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
@@ -16,8 +24,13 @@ document.querySelector('#menu-btn').onclick = () =>{
 window.onscroll = () =>{
     searchForm.classList.remove('active');
     navbar.classList.remove('active');
+    profileForm.classList.remove('active');
 
 }
+
+
+
+
 
 let filterBtn = document.querySelectorAll('.fbtns .buttons');
 let filterItem = document.querySelectorAll('.products .box-container .box');

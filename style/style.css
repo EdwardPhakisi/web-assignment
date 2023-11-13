@@ -127,6 +127,42 @@ section{
 			}
 		}
 	}
+	.profile{
+		position: absolute;
+		top: 115%;right: -105%;
+		width: 50rem;height: 6rem;
+		background: #fff;
+		border-radius: .5rem;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+		border: .1rem solid rgba(0,0,0,.3);
+
+		&.active{
+			right: 2rem;
+			transition: .4s linear;
+		}
+
+		input{
+			height: 100%;width: 100%;
+			font-size: 1.6rem;
+			text-transform: none;
+			color: black;
+			padding:- 1.5rem;
+			text-align: center;
+		}
+		#submit{
+			font-size: 2rem;
+			color: #666;
+			margin: 0 1rem;
+	
+			&:hover{
+				color: blue
+			}
+		}
+		
+	}
 }
 #menu-btn{
 	display: none;
@@ -234,7 +270,8 @@ section{
 	
 }
 .products{
-
+	padding: 0;
+	padding-top: 7.6rem;
 	.fbtns{
 		display: flex;
 		flex-wrap: wrap;
@@ -396,11 +433,42 @@ section{
 		}
 	}
 }
+.aboutUS{
+	padding: 0;
+	padding-top: 7.6rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	align-items: center;
+	background: linear-gradient(#fff 15%, antiquewhite);
+
+	.image{
+		flex: 1 1 42rem;
+
+		img{
+			width: 40rem;
+		}
+	}
+	.content{
+		flex: 1 1 42rem;
+
+		span{
+			color: blue;
+			font-size: 2rem;
+		}
+
+		p{
+			color: black;
+			font-size: 2rem;
+		}
+	}
+}
 
 .review{
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	background: #eeb9b8e2;
+	background: linear-gradient(antiquewhite 2%, #eeb9b8e2);
+
 
 
 	.slide{
@@ -536,12 +604,13 @@ section{
 		
 	}
 }
+.line{
+	background: rgb(44, 52, 101);
+	height: 1rem;
+	width: 100%;
+}
 .footer{
-	.line{
-		background: rgb(44, 52, 101);
-		height: 1rem;
-		width: 100%;
-	}
+	
 
 	.boxcontainer{
 		width: 100%;
