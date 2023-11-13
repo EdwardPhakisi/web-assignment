@@ -24,7 +24,7 @@
 		<nav class="navbar">
 			<a href="index.html">Home</a>
 			<a href="products.html">Product</a>
-			<a href="contact.html">Contact</a>
+			<a href="products.html">Contact</a>
 			<a href="about.html">About</a>
 		</nav>
 		<div class="icons">
@@ -37,68 +37,57 @@
 			<label for="searchbox" class="fas fa-search"></label>
 		</form>
 	</header>
-	<!--home section-->
-	<section class="home" id="home">
 
-		<div class="swiper home-slider">
+	<!-- contact section-->
+    <section class="contact">
+    	<div class="contact" id="contact">
+		<h1 class="heading"><span>Contact</span> Us</h1>
 
-		<div class="swiper-wrapper">
+		<div class="icons-container">
 
-			<div class="swiper-slide  slide" style="background: url(images/slideshow/Wbanner.jpeg);">
-				<div class="content">
-					<span>New in</span>
-					<h3>women's Fashion</h3>
-					<a href="products.html" class="btn">shop now</a>
-				</div>
+			<div class="icons">
+				<i class="fas fa-map-marker-alt"></i>
+				<h3>address</h3>
+				<p>6 cassandra bedworthpark Vrega 1936</p>
 			</div>
 
-			<div class="swiper-slide slide" style="background: url(images/slideshow/MEnBanner.jpg);">
-				<div class="content">
-					<span>New in</span>
-					<h3>men's Fashion</h3>
-					<a href="products.html" class="btn">shop now</a>
-				</div>
-			</div>
-
-			<div class="swiper-slide slide" style="background: url(images/slideshow/watch-banner.jpg);">
-				<div class="content">
-					<span>30% off</span>
-					<h3>Accessories</h3>
-					<a href="products.html" class="btn">shop now</a>
-				</div>
+			<div class="icons">
+				<i class="fas fa-envelope"></i>
+				<h3>email</h3>
+				<p>220058024@edu.vut.ac.za</p>
+				<p>edwardphakisi1@gmail.com</p>
 
 			</div>
 
-		</div>
-
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
-
-		</div>
-
-	</section>
-	<!-- specials section -->
-	<section class="specialcontainer">
-
-		<div class="special">
-			<img src="images/specials banners/watchesspecials.jpg">
-			<div class="content">
-				<span>Special offer</span>
-				<h3>upto 30% off</h3>
-				<a href="products.html" class="btn">check out</a>
-			</div>
-		</div><div class="special">
-			<img src="images/specials banners/clothingspecial.jpg">
-			<div class="content">
-				<span>Special offer</span>
-				<h3>upto 50% off</h3>
-				<a href="products.html" class="btn">check out</a>
+			<div class="icons">
+				<i class="fas fa-phone"></i>
+				<h3>phone</h3>
+				<p>+27 81 008 9118</p>
 			</div>
 		</div>
-	</section>
+        <div class="row">
 
-	 <!--footer-->
-	 <section class="footer">
+            <form action="">
+                <h3>Get in touch</h3>
+                <div class="inputbox">
+                    <input type="text" placeholder="name...">
+                    <input type="email" placeholder="email...">
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="number...">
+                    <input type="text" placeholder="subject...">
+                </div>
+                <textarea placeholder="massage..." id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send massage" class="btn">
+            </form>
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.029792759662!2d27.863375074729763!3d-26.711495184825136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9459a7e0d28fe9%3A0x9345ece850c55284!2s6%20Cassandra%20Ave%2C%20Bedworth%20Park%2C%20Vereeniging%2C%201939!5e0!3m2!1sen!2sza!4v1699846708509!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+	    </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
         <div class="line"></div>
         <div class="boxcontainer">
             <div class="icons">
@@ -124,7 +113,6 @@
             <p>Copyright &copy;2023; Designed by <span>TE Phakisi 22005824 </span> </p>
         </div>
     </section>
-	
 
 
 
@@ -139,20 +127,5 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 
-	 <!-- Initialize Swiper using js -->
-	 <script>
-		var swiper = new Swiper(".home-slider", {
-		centeredSlides: true,
-		loop:true,
-		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
-		},
-		  navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		  },
-		});
-	  </script>
 </body>
 </html>
